@@ -5,7 +5,28 @@ module.exports = (sequelize, DataTypes) => {
         Name:{
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        Team:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        }, 
+        Number:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        Nationality:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        DriverRank:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        Imageurl:{
+            type:DataTypes.STRING,
+            allowNull:false,
         }
+
        
        
 
