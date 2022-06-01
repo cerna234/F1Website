@@ -5,7 +5,7 @@ import Partners from "../components/Partners"
 
 function Home() {
   return (
-    <div>
+    <div className="homePage">
       
   
 

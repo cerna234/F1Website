@@ -21,19 +21,7 @@ export const sponsorsRow1 = [
     },
     {
         name:<SiFerrarinv/>
-    },
-    {
-        name:<SiFerrarinv/>
-    },
-    {
-        name:<SiFerrarinv/>
-    },
-    {
-        name:<SiFerrarinv/>
-    },
-    {
-        name:<SiFerrarinv/>
-    },
+    }
    
     
 ]
