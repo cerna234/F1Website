@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        DriverRank:{
+        Points:{
             type: DataTypes.INTEGER,
             allowNull: false,
         },
@@ -26,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
             type:DataTypes.STRING,
             allowNull:false,
         }
+
 
        
        

@@ -21,7 +21,7 @@ function Drivers() {
   })
 
 
-  axios.get("http://localhost:3002/Drivers").then( (response) => {
+  axios.get("http://localhost:3002/Drivers/TopTen").then( (response) => {
       allDrivers(response.data);
   })
 
@@ -89,7 +89,7 @@ const name = "LandingCar"
             </div>
 
             <div className="driverStatContainer" >
-                <p className="DriverStat">{value.DriverRank } PTS</p>
+                <p className="DriverStat">{value.Points } PTS</p>
             </div>
           </div>
           </Link>

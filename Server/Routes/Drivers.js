@@ -6,12 +6,10 @@ const { Drivers } = require("../models")
 //RouteFor Top Drivers
 router.get( "/TopDrivers" , async (req,res) => {
     const AllDrivers = await Drivers.findAll({
-        where: {
-        DriverRank: {
-            [Op.lte]: 3,
-        }
-        
-    }
+        order:[
+            ['Points','DESC']
+    ],
+    limit:3,
 });
     res.json(AllDrivers);
     
@@ -19,11 +17,17 @@ router.get( "/TopDrivers" , async (req,res) => {
 
 
 //All Drivers
-router.get( "/" , async (req,res) => {
-    const AllDrivers = await Drivers.findAll();
-    res.json(AllDrivers);
+router.get( "/TopTen" , async (req,res) => {
+    const TopTenDrivers = await Drivers.findAll({
+        order:[
+            ['Points','DESC']
+    ],
+    limit:10,
+});
+
+    res.json(TopTenDrivers);
     
-} )
+})
 
 
 
