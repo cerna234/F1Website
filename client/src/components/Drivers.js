@@ -42,7 +42,7 @@ const link = "https://i.insider.com/628ba121b9dbb40018cb3fba?width=700";
         <h2>2022 TOP DRIVERS</h2>
         </div>
      
-      <div className="DriverStripe"></div>
+      
 
       </div>
     
@@ -96,11 +96,9 @@ const link = "https://i.insider.com/628ba121b9dbb40018cb3fba?width=700";
           <Link to="/drivers">
            <div className="driverlistContainer">
             <div className="driverListText">
-              <div style={{backgroundColor:value.teamColor}} className='teamColor'>
-
-              </div>
-              <h2>{value.Name}</h2>
-              <p>{value.Team}</p>
+              <div style={{backgroundColor:value.teamColor}} className='teamColor'></div>
+              <h2 >{value.Name}</h2>
+              <p >{value.Team}</p>
 
             </div>
 
