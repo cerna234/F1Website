@@ -31,6 +31,8 @@ function Drivers() {
 },[])
 const name = "LandingCar"
 
+const link = "https://i.insider.com/628ba121b9dbb40018cb3fba?width=700";
+
   
   return (
     <div>
@@ -47,19 +49,30 @@ const name = "LandingCar"
     
     
     <div className='Drivers'>
-     
-      
+ 
      {driversList.map( (value,key) => {
        return(
          <div className='Driver'>
            <div  className='DriverImageContainer' >
-             
+             <img className='DriverImg' src={value.Imageurl}></img>
+            
           
            </div>
+           <div style={{backgroundColor:value.teamColor}} className='slit'>
+               
+
+               </div>
+          
 
            <div className='DriverInfo'>
-              <h2>{value.Name}</h2>
+
+             <div className='DriverInfoInner'>
+             <h2>{value.Name}</h2>
               <p>{value.Team}</p>
+          
+
+             </div>
+             
         
            </div>
 
@@ -83,13 +96,17 @@ const name = "LandingCar"
           <Link to="/drivers">
            <div className="driverlistContainer">
             <div className="driverListText">
+              <div style={{backgroundColor:value.teamColor}} className='teamColor'>
+
+              </div>
               <h2>{value.Name}</h2>
               <p>{value.Team}</p>
 
             </div>
 
             <div className="driverStatContainer" >
-                <p className="DriverStat">{value.Points } PTS</p>
+                <p className="DriverStat">{value.Points} PTS</p>
+                
             </div>
           </div>
           </Link>
@@ -100,7 +117,7 @@ const name = "LandingCar"
      </div>
     </div>
 
-    <p>View All Drivers</p>
+    <Link to="/drivers">View All Drivers</Link>
 
     </div>
   )
