@@ -68,8 +68,9 @@ html{
     background-image: linear-gradient(rgb(18, 20, 29), rgb(50, 51, 59));
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
     
 }
 
@@ -103,7 +104,7 @@ html{
 
 .Drivers{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -317,14 +318,28 @@ html{
         font-size: 25px;
     }
 
-    
-
-    .Driver{
-        width: 80%;
-        height: 50vh;
-        border-radius: 10px;
-        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
+    .Drivers{
+        flex-direction: column;
+        height: 130vh;
     }
+
+    .driverListText h2{
+        font-size: 10px;
+    }
+    .driverListText p{
+        font-size: 6px;
+       
+    }
+    .DriverStat{
+        font-size: 10px;
+        
+     }
+
+
+    
+   
+
+    
   }
 
 @media only screen and (max-width: 1200px) {
@@ -338,11 +353,16 @@ html{
          padding-bottom: 10vh;
      }
 
-     .Drivers{
-        height: 300vh;
-        flex-direction: column;
-        
+     .Driver{
+        width: 280px;
+        height: 25vh;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
     }
+
+    
+
+    
 
      
 
