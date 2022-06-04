@@ -29,6 +29,13 @@ router.get( "/TopTen" , async (req,res) => {
     
 })
 
+router.get("/driverById/:id"), async(req,res) => {
+    const id = req.params.id;
+
+    const driver = await Drivers.findByPk(id);
+    res.json(driver);
+}
+
 
 
 

@@ -5,12 +5,15 @@ import Home from "./Pages/Home"
 import Sponsors from "./Pages/Sponsors"
 import Teams from "./Pages/Teams"
 import AllDrivers from "./Pages/AllDrivers"
+import NavBar from './components/Navbar.js';
+import Driver from './components/Driver';
 
 function App() {
   return (
     <div className="App">
 
       <Router>
+      <NavBar/>
 
         
         <Routes>
@@ -18,8 +21,9 @@ function App() {
             
             <Route path="/" exact element={<Home/>} />
             <Route path="/about" exact element={<Sponsors/>} />
-            <Route path="/drivers" exact element={<AllDrivers/>} />
-            <Route path="/teams" exact element={<Teams/>} />
+            <Route path="/Drivers/driverById/:id" exact element={<Driver/>} />
+            
+            
 
          
             

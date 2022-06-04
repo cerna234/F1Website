@@ -3,6 +3,7 @@ import Landing from '../components/Landing'
 import Drivers from '../components/Drivers'
 import Partners from "../components/Partners"
 
+
 function Home() {
   return (
     <div className="homePage">
@@ -12,6 +13,7 @@ function Home() {
       <Landing/>
       <Drivers/>
       <Partners/>
+    
 
 
     </div>

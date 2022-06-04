@@ -1,7 +1,7 @@
 import React from 'react'
 import { SiZoom,SiDhl,SiEmirates,SiFerrarinv,SiLenovo } from 'react-icons/si';
 import { FaAws } from "react-icons/fa";
-import image from "../Images/LandingCar.png"
+
 
 
 

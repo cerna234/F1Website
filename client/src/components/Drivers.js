@@ -2,6 +2,10 @@ import React from 'react'
 import axios from "axios"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { AiOutlineRight } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
@@ -14,6 +18,8 @@ function Drivers() {
   const [driversList, Drivers] = useState([]);
   const [allDriversList, allDrivers] = useState([]);
 
+  const navigate = useNavigate();
+
 
   useEffect( ()=> {
   axios.get( "http://localhost:3002/Drivers/TopDrivers").then( (response) => {
@@ -25,13 +31,15 @@ function Drivers() {
       allDrivers(response.data);
   })
 
+ 
+
 
 
 
 },[])
-const name = "LandingCar"
 
-const link = "https://i.insider.com/628ba121b9dbb40018cb3fba?width=700";
+
+
 
   
   return (
@@ -93,7 +101,7 @@ const link = "https://i.insider.com/628ba121b9dbb40018cb3fba?width=700";
        {allDriversList.map( (value,key) => {
         return(
 
-          <Link to="/drivers">
+        
            <div className="driverlistContainer">
             <div className="driverListText">
               <div style={{backgroundColor:value.teamColor}} className='teamColor'></div>
@@ -103,11 +111,24 @@ const link = "https://i.insider.com/628ba121b9dbb40018cb3fba?width=700";
             </div>
 
             <div className="driverStatContainer" >
-                <p className="DriverStat">{value.Points} PTS</p>
+              
+               
+            <div className='driverstatInner'>
+              <div>
+              <p className="DriverStat">{value.Points} PTS</p>
+
+              </div>
+
+              
+             
+             
+            
+              </div>
                 
             </div>
+           
           </div>
-          </Link>
+        
          
         )
        })}
