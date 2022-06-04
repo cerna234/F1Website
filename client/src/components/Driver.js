@@ -8,7 +8,9 @@ function Driver() {
 
     let {id} = useParams();
   return (
-    <div>hello</div>
+    <div className='DriverProfilePage'>
+{id}
+    </div>
   )
 }
 
