@@ -102,7 +102,7 @@ function Drivers() {
         return(
 
         
-           <div className="driverlistContainer">
+           <div className="driverlistContainer"  onClick= {() => {navigate(`/Drivers/driverById/${value.id}`)}}>
             <div className="driverListText">
               <div style={{backgroundColor:value.teamColor}} className='teamColor'></div>
               <h2 >{value.Name}</h2>
