@@ -2,6 +2,7 @@ import React from 'react'
 import Landing from '../components/Landing'
 import Drivers from '../components/Drivers'
 import Partners from "../components/Partners"
+import Socials from "../components/Socials"
 
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
 
       <Landing/>
       <Drivers/>
+      <Socials/>
       <Partners/>
     
 
