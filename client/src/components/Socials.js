@@ -22,7 +22,7 @@ function Socials() {
         <a target="_blank" href="https://twitter.com/f1" className='socialsLink'><FaTwitter/></a>
         <a target="_blank" href="https://www.instagram.com/f1/?hl=en" className='socialsLink'><FaInstagram/></a>
         <a target="_blank" href="https://www.youtube.com/F1" className='socialsLink'><FaYoutube/></a>
-         
+          
         </div>
     </div>
   )
