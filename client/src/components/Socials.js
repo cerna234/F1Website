@@ -18,10 +18,10 @@ function Socials() {
         </div>
         <div className='socialsInner'>
 
-        <a className='socialsLink'><FaFacebookF/></a>
-        <a className='socialsLink'><FaTwitter/></a>
-        <a className='socialsLink'><FaInstagram/></a>
-        <a className='socialsLink'><FaYoutube/></a>
+        <a target="_blank" href='https://www.facebook.com/Formula1' className='socialsLink'><FaFacebookF/></a>
+        <a target="_blank" href="https://twitter.com/f1" className='socialsLink'><FaTwitter/></a>
+        <a target="_blank" href="https://www.instagram.com/f1/?hl=en" className='socialsLink'><FaInstagram/></a>
+        <a target="_blank" href="https://www.youtube.com/F1" className='socialsLink'><FaYoutube/></a>
          
         </div>
     </div>
