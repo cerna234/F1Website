@@ -135,8 +135,11 @@ function Drivers() {
 
      </div>
     </div>
+    <div className='allDriversButtonContainer'>
+    <Link className='AllDriversButton' to="/drivers">View All Drivers</Link>
 
-    <Link to="/drivers">View All Drivers</Link>
+    </div>
+   
 
     </div>
   )
