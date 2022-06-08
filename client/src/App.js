@@ -7,6 +7,7 @@ import Teams from "./Pages/Teams"
 import AllDrivers from "./Pages/AllDrivers"
 import NavBar from './components/Navbar.js';
 import Driver from './components/Driver';
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
          
             
         </Routes>
+        <Footer/>
 
       </Router>
      
