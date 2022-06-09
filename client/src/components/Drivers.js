@@ -4,19 +4,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineRight } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-
-
-
-
-
-
+import DriversComponent from './DriversComponent';
 
 
 
 function Drivers() {
 
   const [driversList, Drivers] = useState([]);
-  const [allDriversList, allDrivers] = useState([]);
+  
 
   const navigate = useNavigate();
 
@@ -27,14 +22,7 @@ function Drivers() {
   })
 
 
-  axios.get("http://localhost:3002/Drivers/TopTen").then( (response) => {
-      allDrivers(response.data);
-  })
-
  
-
-
-
 
 },[])
 
@@ -94,51 +82,9 @@ function Drivers() {
         
     </div>
 
-    <div className="TopTenDriversContainer">
-
-     <div className="TopTenDrivers">
+    
+    <DriversComponent url="http://localhost:3002/Drivers/TopTen"/>
    
-       {allDriversList.map( (value,key) => {
-        return(
-
-        
-           <div className="driverlistContainer"  onClick= {() => {navigate(`/Drivers/driverById/${value.id}`)}}>
-            <div className="driverListText">
-              <div style={{backgroundColor:value.teamColor}} className='teamColor'></div>
-              <h2 >{value.Name}</h2>
-              <p >{value.Team}</p>
-
-            </div>
-
-            <div className="driverStatContainer" >
-              
-               
-            <div className='driverstatInner'>
-              <div>
-              <p className="DriverStat">{value.Points} PTS</p>
-
-              </div>
-
-              
-             
-             
-            
-              </div>
-                
-            </div>
-           
-          </div>
-        
-         
-        )
-       })}
-
-     </div>
-    </div>
-    <div className='allDriversButtonContainer'>
-    <Link className='AllDriversButton' to="/drivers">View All Drivers</Link>
-
-    </div>
    
 
     </div>

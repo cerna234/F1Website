@@ -10,8 +10,8 @@ function Socials() {
             <p>DOWNLOAD THE OFFICAL F1 APP</p>
             </div>
            
-            <a ><img className='appLinks' src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg"></img></a>
-            <a ><img className='appLinks' src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg"></img></a>
+            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.softpauer.f1timingapp2014.basic&hl=en_GB" ><img className='appLinks' src="https://www.formula1.com/etc/designs/fom-website/images/svg/google-play-badge.svg"></img></a>
+            <a target="_blank" href="https://apps.apple.com/gb/app/official-f1-app/id835022598" ><img className='appLinks' src="https://www.formula1.com/etc/designs/fom-website/images/svg/download-on-the-app-store-apple.svg"></img></a>
            
             
 

@@ -3,6 +3,7 @@ import Landing from '../components/Landing'
 import Drivers from '../components/Drivers'
 import Partners from "../components/Partners"
 import Socials from "../components/Socials"
+import DriversComponent from '../components/DriversComponent'
 
 
 function Home() {

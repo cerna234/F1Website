@@ -21,7 +21,8 @@ function App() {
 
             
             <Route path="/" exact element={<Home/>} />
-            <Route path="/about" exact element={<Sponsors/>} />
+            <Route path="/sponsors" exact element={<Sponsors/>} />
+            <Route path="/allDrivers" exact element={<AllDrivers/>}/>
             <Route path="/drivers/driverById/:id" exact element={<Driver/>} />
             
             

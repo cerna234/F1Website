@@ -12,7 +12,7 @@ function Driver() {
   
 
     useEffect( () => {
-        axios.get(`http://localhost:3002/Drivers/driverPage/${id}`).then( (response) => {
+        axios.get(`http://localhost:3002/Drivers/driverById/${id}`).then( (response) => {
           setDriverInfo(response.data);
          
            

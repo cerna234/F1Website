@@ -18,6 +18,8 @@ html{
     font-size: 20px;
     padding-left: 20px;
 }
+
+/* Navigation Styles */
 .navBar{
     width: 100%;
     height: 10vh;
@@ -53,6 +55,8 @@ html{
 .navLinks a:hover{
     position: relative;
 }
+
+/* Landing page styles */
 .LandingPage{
     width: 100%;
     height: 110vh;
@@ -99,7 +103,6 @@ html{
 .topic{
     font-size: 1rem;
     color: rgb(255, 255, 255);
-   
     background-color: red;
     width: 100px;
     padding: 10px 25px 10px 25px;
@@ -109,12 +112,8 @@ html{
 .innerArrowButtons{
     width: 100%;
     height: 10vh;
-  
-
     display: flex;
     justify-content: space-between;
- 
-
 }
 .arowButtons{
     width: 100%;
@@ -122,19 +121,14 @@ html{
     display: block;
     position: relative;
     bottom: 40vh;
- 
-
 }
 
 .arrows{
-
     background-color: rgba(0, 0, 0, 0);
     border: none;
     color: rgba(255, 255, 255, 0.285);
     font-size: 3rem;
     font-weight: 100;
-    
-
 }
 
 .arrows:hover{
@@ -143,18 +137,14 @@ html{
 }
 
 
-
+/* Drivers section for home page  */
 .DriversHeadingContainer{
     width: 100%;
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-   
-
-    
 }
-
 
 .DriversHeadingContainer h2{
     color: rgb(58, 58, 58);
@@ -164,16 +154,11 @@ html{
     font-family: 'Titillium Web', sans-serif;
     font-weight: bolder;
     position: relative;
+    font-size: 50px;
 }
 .DriverTextContainer{
-    width: 50%;
-    height: 100px;
-    display: flex;
-    border-right: 8px solid red;
-    border-bottom: 2px solid red;
-    justify-content: center;
-    border-radius: 0px 0px 20px 0px;
-    box-shadow:  0 6px 4px -4px rgba(0, 0, 0, 0.243);
+    width: 100%;
+    
 }
 
 .DriverStripe{
@@ -266,9 +251,14 @@ html{
     
 }
 
+.driverComponentContainer{
+    width: 100%;
+    height: 120vh;
+}
+
 .TopTenDriversContainer{
     width: 100%;
-    height: 90vh;
+    height: 100%;
     background-color: rgba(255, 0, 0, 0);
     display: flex;
     align-items: center;
@@ -518,6 +508,15 @@ height: 100%;
     background-color: blue;
 }
 
+.allDriversPage{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 
 @media only screen and (max-width: 800px) {
     
@@ -645,6 +644,11 @@ height: 100%;
         height: 50%;
         width: 80%;
         background-color: rgb(149, 42, 6);
+    }
+
+    .DriversHeadingContainer h2{
+        
+        font-size: 35px;
     }
 
     
