@@ -22,7 +22,7 @@ function App() {
             
             <Route path="/" exact element={<Home/>} />
             <Route path="/about" exact element={<Sponsors/>} />
-            <Route path="/Drivers/driverById/:id" exact element={<Driver/>} />
+            <Route path="/drivers/driverById/:id" exact element={<Driver/>} />
             
             
 
