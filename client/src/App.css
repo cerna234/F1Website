@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+
+
 html{
     width:100%;
     height: 100vh;
@@ -19,42 +21,7 @@ html{
     padding-left: 20px;
 }
 
-/* Navigation Styles */
-.navBar{
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(52, 52, 53, 0);
-    position: fixed;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    background-color: red;
-    align-items: center;
-    z-index: 100;
-   
-}
 
-.navLinks{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    width: 30vw;
-    justify-content: space-evenly;
-    
-}
-
-
-
-.navLinks a{
-    color: white;
-    text-decoration: none;
-    
-
-}
-
-.navLinks a:hover{
-    position: relative;
-}
 
 /* Landing page styles */
 .LandingPage{
@@ -63,6 +30,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: black;
  
 }
 
@@ -75,6 +43,8 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 85%;
+
 
     
 }
@@ -87,17 +57,20 @@ html{
     justify-content: space-evenly;
     text-align: left;
     
+    
 }
 .landingInfo h2{
     font-size: 3rem;
-    color: white;
-    
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.568);
-    width: 80%;
+    width: 90%;
+   
 }
 .landingInfo h3{
     font-size: 1rem;
-    color: rgb(209, 209, 209);
+    color: rgb(226, 224, 224);
+    
    
 }
 .topic{
@@ -107,6 +80,8 @@ html{
     width: 100px;
     padding: 10px 25px 10px 25px;
     text-align: center;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.293);
+
 }
 
 .innerArrowButtons{
@@ -126,13 +101,14 @@ html{
 .arrows{
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    color: rgba(255, 255, 255, 0.285);
+    color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 100;
+    text-shadow: 4px 4px 3px black;
 }
 
 .arrows:hover{
-    color: white;
+    color: rgba(187, 185, 185, 0.284);
     cursor: pointer;
 }
 
@@ -147,12 +123,12 @@ html{
 }
 
 .DriversHeadingContainer h2{
-    color: rgb(58, 58, 58);
+    color: rgb(71, 70, 70);
     text-align: center;
     font-size: 50px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.329);
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(37, 37, 37, 0.329);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     position: relative;
     font-size: 50px;
 }
@@ -317,8 +293,9 @@ html{
     font-size: 15px;
 }
 .driverListText p{
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(43, 43, 43, 1);
+    font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -338,6 +315,7 @@ html{
 }
 .DriverStat{
    font-size: 15px;
+   font-family: 'Lato', sans-serif;
    
 }
 
@@ -393,7 +371,7 @@ html{
 
 .sponsorIcon{
     font-size: 60px;
-    color: white;
+    color: rgb(226, 225, 225);
     
 }
 
@@ -477,13 +455,16 @@ html{
     width: 100%;
     height: 100vh;
     display: flex;
+   
+    align-items: center;
+    
 }
 
 
 .driverPageImageContainer{
     width: 50%;
-    height: 100%;
-    background-color: red;
+    height: 80%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -492,8 +473,9 @@ html{
 
 .driverPageImage{
     height: 50%;
-    width: 80%;
+    width: 60%;
     background-color: rgb(149, 42, 6);
+    box-shadow: 9px 9px 12px rgba(0, 0, 0, 0.243);
     
 }
 
@@ -504,8 +486,46 @@ height: 100%;
 
 .driverPageInfo{
     width: 50%;
+    height: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.driverPageInfoContainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    
+}
+.driverPageInfoContainer p{
+  text-align: left;
+width: 50%;
+color: rgb(55, 55, 55);
+  
+}
+
+.driverPageNumber{
+    width: 100%;
     height: 100%;
-    background-color: blue;
+    z-index: -2;
+    position: fixed;
+    font-size: 800px;
+    color: rgba(0, 0, 0, 0.058);
+   
+}
+
+.driverPageInfo p{
+    padding: 20px;
+    
+
 }
 
 .allDriversPage{
@@ -515,7 +535,119 @@ height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    
 }
+
+.CircuitPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.circuitsContainer{
+
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+  
+    
+    
+ 
+}
+
+.circuitContainer{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+
+.circuitContainerInner{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.circuitInfoContainer{
+    width: 90%;
+    height: 80%;
+    border-top: 10px solid rgb(110, 110, 110);
+    border-right: 9px solid rgb(110, 110, 110);
+    border-radius: 0px 20px 0px 0px;
+    padding: 20px;
+}
+
+.imageContainerCircuits{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(7, 7, 7);
+    display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.circuitImage{
+    width: 100%;
+    height: 100%;
+    opacity: 70%;
+ 
+}
+
+.circuitTitleContainer{
+  
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+
+}
+.circuitInfo{
+    width: 100%;
+    height: 40%;
+    border-radius: 0px 0px 20px 0px;
+    border-bottom: 3px solid rgb(48, 48, 48) ;
+    border-right: 3px solid rgb(48, 48, 48) ;
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-evenly;
+    align-items: left;
+    
+
+
+}
+
+.circuitInfo p {
+    color: rgb(121, 121, 123);
+    text-align: left;
+    
+
+
+}
+
+.circuitInfoInner{
+    width: 100%;
+    height: 60%;
+
+    
+}
+
 
 
 @media only screen and (max-width: 800px) {
@@ -557,11 +689,7 @@ height: 100%;
        
         
     }
-    .topic{
-        font-size: 1rem;
-        width: 50px;
-       
-    }
+    
      
     .landingInfo{
         width: 80%;
@@ -570,6 +698,7 @@ height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
+        background-color: black;
         
     }
 
@@ -625,14 +754,8 @@ height: 100%;
 
 
     
-    .driverPageImageContainer{
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        
-        
-    }
-    
+ 
+
     
     .driverPageInfo{
         width: 100%;
@@ -641,9 +764,10 @@ height: 100%;
     }
 
     .driverPageImage{
-        height: 50%;
-        width: 80%;
+        height: 40%;
+        width: 70%;
         background-color: rgb(149, 42, 6);
+        
     }
 
     .DriversHeadingContainer h2{

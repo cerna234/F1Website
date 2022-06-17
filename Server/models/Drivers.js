@@ -6,15 +6,20 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        Team:{
+    
+        podiums:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        BirthPlace:{
             type: DataTypes.STRING,
             allowNull: false,
-        }, 
+        },
         Number:{
             type: DataTypes.STRING,
             allowNull: false,
         },
-        Nationality:{
+        Country:{
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -27,18 +32,25 @@ module.exports = (sequelize, DataTypes) => {
             allowNull:false,
             defaultValue: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_RlT-ytB9A_TQFLKMqVYpdJiiRbckTCThmw&usqp=CAU",
         },
+        Age:{
+            type:DataTypes.INTEGER,
+            allowNull:false,
+
+        },
+
 
         teamColor:{
             type:DataTypes.STRING,
             allowNull:false,
+        },
+
+        teamName:{
+            type: DataTypes.STRING,
+            allowNull:false
         }
 
-
-       
-       
-
-        
-   
+    },{
+        timestamps: false
     });
  
     

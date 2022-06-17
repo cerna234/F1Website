@@ -23,6 +23,8 @@ function DriversComponent(props) {
   
   },[])
 
+  
+
   return (
     <div  className='driverComponentContainer'>
  <div className="TopTenDriversContainer">
@@ -30,14 +32,18 @@ function DriversComponent(props) {
 <div className="TopTenDrivers">
 
   {allDriversList.map( (value,key) => {
+
+
    return(
 
    
       <div className="driverlistContainer"  onClick= {() => {navigate(`/Drivers/driverById/${value.id}`)}}>
+        
        <div className="driverListText">
          <div style={{backgroundColor:value.teamColor}} className='teamColor'></div>
          <h2 >{value.Name}</h2>
          <p >{value.Team}</p>
+      
 
        </div>
 

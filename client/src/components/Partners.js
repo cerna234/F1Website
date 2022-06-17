@@ -10,7 +10,7 @@ function Partners() {
         <div className="PartnersHeading">
           <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/1024px-F1.svg.png"/>
           <h2 className="partnersHeadingText" >  Our Partners  </h2>
-          <MdOutlineArrowForwardIos className="partnersHeadingArrow"/>
+         
           </div>
       
         <div className="sponsorContainer">

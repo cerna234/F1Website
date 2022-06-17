@@ -65,8 +65,10 @@ a{
  
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
    
-    font-weight: bolder;
+    font-weight: 700;
     padding: 1rem 1rem;
 }
 a:hover{
@@ -134,7 +136,7 @@ const NavBar = () => {
                <MenuLinks onClick={() => setIsOpen(!isOpen)}><Link className='Link' to="/">HOME</Link></MenuLinks>
                <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/allDrivers">DRIVERS</Link></MenuLinks>
                <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/contact">TEAMS</Link></MenuLinks>
-               <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/contact">CIRCUITS</Link></MenuLinks>
+               <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/Circuits">CIRCUITS</Link></MenuLinks>
                
                
 

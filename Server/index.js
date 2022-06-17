@@ -13,6 +13,13 @@ const DriversRoutes = require("./Routes/Drivers");
 app.use("/Drivers", DriversRoutes);
 
 
+const CircuitsRoutes = require("./Routes/Circuits");
+app.use("/Circuits", CircuitsRoutes);
+
+
+
+
+
 db.sequelize.sync().then( () => {
     app.listen(3002, () => {
         console.log("servers up");

@@ -39,7 +39,51 @@ function Driver() {
       <p>{driverInfo.Name}</p>
     </div>
     <div className='driverPageInfo'>
-      info
+      <div className='driverPageInfoContainer'>
+      <h2>Team: </h2>
+      <p>{driverInfo.teamName}</p>
+
+      </div>
+
+      <div className='driverPageInfoContainer'>
+        <h2>Number: </h2>
+        <p>{driverInfo.Number}</p>
+
+      </div>
+      
+
+     
+
+      <div className='driverPageInfoContainer'>
+      <h2>Podiums: </h2>
+      <p>{driverInfo.BirthPlace}</p>
+
+
+      </div>
+
+      <div className='driverPageInfoContainer'>
+        <h2>Country: </h2>
+        <p>{driverInfo.Country}</p>
+
+      </div>
+
+      <div className='driverPageInfoContainer'>
+      <h2>Age: </h2>
+      <p>{driverInfo.Age}</p>
+
+
+
+      </div>
+      <h3 className='driverPageNumber'>{driverInfo.Number}</h3>
+
+      
+     
+    
+      
+   
+     
+     
+      
     </div>
    
 

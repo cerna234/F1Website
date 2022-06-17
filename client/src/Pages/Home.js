@@ -1,9 +1,9 @@
 import React from 'react'
 import Landing from '../components/Landing'
-import Drivers from '../components/Drivers'
+import Drivers from '../components/DriverComponents/Drivers'
 import Partners from "../components/Partners"
 import Socials from "../components/Socials"
-import DriversComponent from '../components/DriversComponent'
+import DriversComponent from '../components/DriverComponents/DriversComponent'
 
 
 function Home() {
