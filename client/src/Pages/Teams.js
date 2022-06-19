@@ -1,8 +1,13 @@
 import React from 'react'
+import TeamsComponent from "../components/TeamsComponent"
 
 function Teams() {
   return (
-    <div>Teams</div>
+    <div>
+      
+      <TeamsComponent/>
+      
+      </div>
   )
 }
 

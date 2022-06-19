@@ -17,9 +17,16 @@ function Drivers() {
 
 
   useEffect( ()=> {
-  axios.get( "http://localhost:3002/Drivers/TopDrivers").then( (response) => {
-      Drivers(response.data);
-  })
+
+    try{
+      axios.get( "http://localhost:3002/Drivers/TopDrivers").then( (response) => {
+        Drivers(response.data);
+    })
+
+    }catch(error){
+        console.log(error);
+    }
+ 
 
 
  
@@ -48,7 +55,7 @@ function Drivers() {
  
      {driversList.map( (value,key) => {
        return(
-         <div className='Driver'>
+         <div key={key} className='Driver'>
            <div  className='DriverImageContainer' >
              <img className='DriverImg' src={value.Imageurl}></img>
             

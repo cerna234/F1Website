@@ -22,7 +22,7 @@ function CircuitComponent() {
 
 
         return(
-           <div className='circuitContainer'>
+           <div key={key} className='circuitContainer'>
                 <div className='circuitContainerInner'>
                     <div className='circuitInfoContainer'>
                         <div className='imageContainerCircuits'>

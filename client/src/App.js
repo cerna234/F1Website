@@ -27,6 +27,7 @@ function App() {
             <Route path="/" exact element={<Home/>} />
             <Route path="/sponsors" exact element={<Sponsors/>} />
             <Route path="/allDrivers" exact element={<AllDrivers/>}/>
+            <Route path="/teams" exact element={<Teams/>}/>
             <Route path="/Circuits" exact element={<Circuits/>}/>
             <Route path="/drivers/driverById/:id" exact element={<Driver/>} />
             

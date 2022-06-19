@@ -135,7 +135,7 @@ const NavBar = () => {
                
                <MenuLinks onClick={() => setIsOpen(!isOpen)}><Link className='Link' to="/">HOME</Link></MenuLinks>
                <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/allDrivers">DRIVERS</Link></MenuLinks>
-               <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/contact">TEAMS</Link></MenuLinks>
+               <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/teams">TEAMS</Link></MenuLinks>
                <MenuLinks onClick={() => setIsOpen(!isOpen)}> <Link className='Link' to="/Circuits">CIRCUITS</Link></MenuLinks>
                
                

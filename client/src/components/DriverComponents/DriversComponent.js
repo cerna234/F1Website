@@ -37,7 +37,7 @@ function DriversComponent(props) {
    return(
 
    
-      <div className="driverlistContainer"  onClick= {() => {navigate(`/Drivers/driverById/${value.id}`)}}>
+      <div key={key} className="driverlistContainer"  onClick= {() => {navigate(`/Drivers/driverById/${value.id}`)}}>
         
        <div className="driverListText">
          <div style={{backgroundColor:value.teamColor}} className='teamColor'></div>
