@@ -1,14 +1,10 @@
 import React from 'react'
 import axios from "axios"
 import { useEffect,useState } from 'react'
-import { useNavigate } from "react-router-dom";
 
 function Teams() {
 
   const [teams,setTeams] = useState([]);
-
-
-  const navigate = useNavigate();
 
   useEffect( () => {
 
@@ -22,39 +18,12 @@ function Teams() {
     <div className='teamComponent'>
       {teams.map( (value,key) => {
         return(
-          <div className='teamContainer' >
-            <div className='innerTeamContainer' onClick= {() => {navigate(`/Drivers/teamById/${value.id}`)}}>
-              <div className='namePoints'>
-
-                <div className='teamInner'>
-                <p>{value.teamName}</p>
-              
-              {console.log(value)}
-                
-
-                </div>
-                
-              </div>
-              <div className='teamDrivers'>
-              <div className='teamInner'>
-                <p>{value.Name}</p>
-                <p>team Points</p>
-
-                </div>
-              </div>
-
-              <div className='carImg'>
-              car img
-
-              </div>
-
-            </div>
+          <div>
+            <p>{value.teamName}</p>
+            <p>{value.id}</p>
           </div>
-         
         )
       })}
-
-      
     </div>
   )
 }

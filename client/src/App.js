@@ -10,7 +10,6 @@ import Driver from './components/DriverComponents/Driver';
 import Circuits from './Pages/Circuits';
 import Footer from "./components/Footer"
 import ScrollToTop from './components/ScrollToTop';
-import Team from "./components/Team"
 
 function App() {
   return (
@@ -31,7 +30,6 @@ function App() {
             <Route path="/teams" exact element={<Teams/>}/>
             <Route path="/Circuits" exact element={<Circuits/>}/>
             <Route path="/drivers/driverById/:id" exact element={<Driver/>} />
-            <Route path="/drivers/teamById/:id" exact element={<Team/>} />
             
         </Routes>
 

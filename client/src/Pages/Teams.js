@@ -3,7 +3,7 @@ import TeamsComponent from "../components/TeamsComponent"
 
 function Teams() {
   return (
-    <div className='teamPage'>
+    <div>
       
       <TeamsComponent/>
       
