@@ -60,6 +60,7 @@ router.get("/teamById/:id", async(req,res) => {
         {type: sequelize.QueryTypes.SELECT}
 
         
+        
     );
     
     res.json(driverTest);
