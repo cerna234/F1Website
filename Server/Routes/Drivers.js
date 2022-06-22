@@ -52,11 +52,11 @@ router.get("/allDrivers", async(req,res) => {
 })
 
 
-router.get("/teamById/:teamId", async(req,res) => {
-    const teamId = req.params.teamId;
+router.get("/teamById/:id", async(req,res) => {
+    const teamId = req.params.id;
     const driverTest = await sequelize.query(
 
-        "SELECT `Teams`.teamName,points,Name FROM f1.Drivers,f1.Teams WHERE `Drivers`.TeamId = `Teams`.id AND `Drivers`.TeamId = " + teamId + "",
+        "SELECT teamName,id FROM f1.Teams",
         {type: sequelize.QueryTypes.SELECT}
 
         
@@ -67,7 +67,7 @@ router.get("/teamById/:teamId", async(req,res) => {
 
 router.get("/teams", async(req,res) => {
     const teams = await sequelize.query(
-        "SELECT * FROM `f1`.Teams",
+        "SELECT `Teams`.teamName,`Teams`.id FROM `f1`.Teams",
         {type: sequelize.QueryTypes.SELECT}
 
     );
