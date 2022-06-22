@@ -52,29 +52,31 @@ router.get("/allDrivers", async(req,res) => {
 })
 
 
-
 router.get("/teamById/:id", async(req,res) => {
     const teamId = req.params.id;
     const driverTest = await sequelize.query(
 
-        
         "SELECT teamName,id FROM f1.Teams",
-        {type: sequelize.QueryTypes.SELECT},
+        {type: sequelize.QueryTypes.SELECT}
+
+        
     );
-
+    
+    res.json(driverTest);
 })
-
-
-
 
 router.get("/teams", async(req,res) => {
     const teams = await sequelize.query(
-        "SELECT * FROM `f1`.Teams",
-        
+        "SELECT `Teams`.teamName,`Teams`.id FROM `f1`.Teams",
         {type: sequelize.QueryTypes.SELECT}
 
     );
 
+    res.json(teams);
 })
+
+
+
+
 
 module.exports = router;
