@@ -29,7 +29,7 @@ function Teams() {
                 <div className='teamInner'>
                 <p>{value.teamName}</p>
               
-              {console.log(value)}
+          
                 
 
                 </div>

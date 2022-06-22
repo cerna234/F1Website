@@ -44,10 +44,6 @@ module.exports = (sequelize, DataTypes) => {
             allowNull:false,
         },
 
-        teamName:{
-            type: DataTypes.STRING,
-            allowNull:false
-        }
 
     },{
         timestamps: false

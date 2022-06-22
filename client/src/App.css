@@ -657,61 +657,53 @@ color: rgb(55, 55, 55);
 
 }
 
-.teamComponent{
-    padding-top: 20vh;
-    width: 100%;
-    height: 100vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .teamContainer{
-    width: 80%;
-    height: 70vh;
+width: 80%;
+height: 70vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .innerTeamContainer{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-top: 4px solid rgb(0, 0, 0);
-    border-right: 4px solid rgb(0, 0, 0);
-    border-radius: 0px 20px 0px 0px;
-    padding: 20px;
+width: 80%;
+height: 80%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+border-top: 4px solid rgb(0, 0, 0);
+border-right: 4px solid rgb(0, 0, 0);
+border-radius: 0px 20px 0px 0px;
+padding: 20px;
 
 }
 
 .namePoints,.teamDrivers{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: 100%;
+height: 25%;
+display: flex;
+justify-content: center;
+align-items: center;
 
 }
 
 .teamInner{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.78);
+width: 100%;
+height: 90%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid rgba(0, 0, 0, 0.78);
 }
 
 .carImg{
-    width: 100%;
-    height: 50%;
-    background-color: blue;
+width: 100%;
+height: 50%;
+background-color: blue;
 }
+
 
 
 
