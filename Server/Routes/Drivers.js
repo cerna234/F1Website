@@ -68,7 +68,7 @@ router.get("/teamById/:teamId", async(req,res) => {
 
 router.get("/teams", async(req,res) => {
     const teams = await sequelize.query(
-        "SELECT * FROM `f1`.Teams",
+        "SELECT `Teams`.teamName,`Teams`.id FROM `f1`.Teams",
         {type: sequelize.QueryTypes.SELECT}
 
     );
