@@ -34,7 +34,7 @@ function Team() {
           return (
             <div>
               <img className='teamLogo' src={value.teamLogo}></img>
-              <p>{value.teamName}</p>
+              <p style={{color:value.teamColor,fontWeight:"bold"}}>{value.teamName}</p>
             </div>
           )
         })}
