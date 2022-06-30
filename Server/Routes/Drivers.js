@@ -56,7 +56,7 @@ router.get("/teamById/:id", async(req,res) => {
     const teamId = req.params.id;
     const driverTest = await sequelize.query(
 
-        "SELECT teamName,id FROM f1.Teams",
+        "SELECT DISTINCT(teamName),teamLogo,teamCountry,founded,`Teams`.teamColor FROM `f1`.Drivers,`f1`.Teams WHERE `Drivers`.TeamId = `Teams`.id AND `Drivers`.TeamId = "+ teamId + "",
         {type: sequelize.QueryTypes.SELECT}
 
         
@@ -67,13 +67,28 @@ router.get("/teamById/:id", async(req,res) => {
 
 router.get("/teams", async(req,res) => {
     const teams = await sequelize.query(
-        "SELECT `Teams`.teamName,`Teams`.id FROM `f1`.Teams",
+        "SELECT * FROM `f1`.Teams",
         {type: sequelize.QueryTypes.SELECT}
 
     );
 
     res.json(teams);
 })
+
+
+router.get("/driversNames/:id", async(req,res) => {
+
+    const driverId = req.params.id;
+    
+    const driverNames = await sequelize.query(
+        "SELECT GROUP_CONCAT(DISTINCT(`Drivers`.Name)) as 'DriverNames', SUM(points) as 'driverPoints', SUM(podiums) as 'driverPodiums' FROM `f1`.Drivers,`f1`.Teams WHERE `Drivers`.TeamId = "+ driverId +"",
+        {type: sequelize.QueryTypes.SELECT}
+    )
+
+    res.json(driverNames);
+})
+
+
 
 
 

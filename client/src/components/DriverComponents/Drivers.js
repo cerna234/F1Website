@@ -42,7 +42,7 @@ function Drivers() {
       <div className="DriversHeadingContainer">
         <div className="DriverTextContainer">
 
-        <h2>2022 TOP DRIVERS</h2>
+        <h2 className='titleHeading'>2022 TOP DRIVERS</h2>
         </div>
      
       

@@ -2,9 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
-
-
 html{
     width:100%;
     height: 100vh;
@@ -13,6 +10,7 @@ html{
     width: 100%;
     height: 100%;
 }
+/* NavBar and footer logo */
 .logo{
     width: 100px;
     height: 25px;
@@ -122,15 +120,15 @@ html{
     align-items: center;
 }
 
-.DriversHeadingContainer h2{
-    color: rgb(71, 70, 70);
+.titleHeading{
+    color: rgb(47, 47, 47);
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     text-shadow: 2px 2px 5px rgba(37, 37, 37, 0.329);
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
     position: relative;
-    font-size: 50px;
+
 }
 .DriverTextContainer{
     width: 100%;
@@ -223,8 +221,6 @@ html{
     position: relative;
     z-index: 20;
     top: 2vh;
-   
-    
 }
 
 .driverComponentContainer{
@@ -458,10 +454,11 @@ html{
    
     align-items: center;
     
+    
 }
 
 
-.driverPageImageContainer{
+.NImageContainer{
     width: 50%;
     height: 80%;
     
@@ -493,6 +490,7 @@ height: 100%;
     justify-content: space-evenly;
     align-items: center;
     
+    
 
 }
 
@@ -518,8 +516,9 @@ color: rgb(55, 55, 55);
     z-index: -2;
     position: fixed;
     font-size: 800px;
-    color: rgba(0, 0, 0, 0.058);
-   
+    color: rgba(0, 0, 0, 0.183);
+    opacity: 20%;
+
 }
 
 .driverPageInfo p{
@@ -659,6 +658,7 @@ color: rgb(55, 55, 55);
 
 .teamComponent{
     padding-top: 20vh;
+    padding-bottom: 10vh;
     width: 100%;
     height: 100%;
     display: flex;
@@ -666,51 +666,72 @@ color: rgb(55, 55, 55);
     align-items: center;
 }
 
-.teamContainer{
-    width: 80%;
-    height: 70vh;
- 
+
+
+.TeamContainer{
+   
+    width: 100%;
+    height: 10vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    padding-top: 1vh;
 }
 
 .innerTeamContainer{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-top: 4px solid rgb(0, 0, 0);
-    border-right: 4px solid rgb(0, 0, 0);
-    border-radius: 0px 20px 0px 0px;
-    padding: 20px;
-
-}
-
-.namePoints,.teamDrivers{
-    width: 100%;
-    height: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.teamInner{
-    width: 100%;
+    width: 70%;
     height: 90%;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 3px 3px 3px rgba(55, 55, 55, 0.61);
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.78);
+    align-items: center ;
+}
+.innerTeamContainer:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.394);
 }
 
-.carImg{
-    width: 100%;
-    height: 50%;
-    background-color: blue;
+.TeamlogoStyling{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    padding-right: 10px;
 }
+
+.teamStyle{
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.section{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.teamLogo{
+    width: 300px;
+    height: 200px;
+}
+
+.innerteamSection{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
 
 
 
@@ -752,8 +773,6 @@ color: rgb(55, 55, 55);
     }
     .landingInfo h3{
         font-size: 1rem;
-       
-        
     }
     
      
@@ -764,8 +783,6 @@ color: rgb(55, 55, 55);
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
-    
-        
     }
 
     .arowButtons{
@@ -773,11 +790,7 @@ color: rgb(55, 55, 55);
     }
 
     .arrows{
-
         font-size: 2rem;
-       
-        
-    
     }
     
     .Socials{
@@ -810,38 +823,25 @@ color: rgb(55, 55, 55);
         background: none;
         border: none;
     }
-    
-
     .driverPage{
         
         height: 150vh;
         flex-direction: column;
     }
-
-
-    
- 
-
-    
     .driverPageInfo{
         width: 100%;
         height: 100%;
-      
     }
 
     .driverPageImage{
         height: 40%;
         width: 70%;
         background-color: rgb(149, 42, 6);
-        
     }
 
     .DriversHeadingContainer h2{
-        
         font-size: 35px;
     }
-
-    
   }
 
 @media only screen and (max-width: 1200px) {
@@ -861,12 +861,5 @@ color: rgb(55, 55, 55);
         border-radius: 10px;
         box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.281);
     }
-
-    
-
-    
-
-     
-
     
   }

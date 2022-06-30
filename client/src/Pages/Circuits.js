@@ -4,6 +4,7 @@ import CircuitComponent from '../components/CircuitComponent'
 function Circuits() {
   return (
     <div className='CircuitPage'>
+     
         
         <CircuitComponent/>
 

@@ -6,6 +6,8 @@ import { useNavigate } from "react-router-dom";
 function Teams() {
 
   const [teams,setTeams] = useState([]);
+  const [teamId, setTeamId] = useState(0);
+  const [drivernames, setDriverNames] = useState([]);
 
 
   const navigate = useNavigate();
@@ -16,40 +18,35 @@ function Teams() {
       setTeams(response.data);
     })
 
+
+
+    
+
+   
+
   },[])
 
   return (
     <div className='teamComponent'>
+
+      <h2 className='titleHeading'>2022 Formula1 Teams</h2>
       {teams.map( (value,key) => {
         return(
-          <div className='teamContainer' >
-            <div className='innerTeamContainer' onClick= {() => {navigate(`/Drivers/teamById/${value.id}`)}}>
-              <div className='namePoints'>
+         
+            <div className='TeamContainer' >
 
-                <div className='teamInner'>
-                <p>{value.teamName}</p>
+              <div className='innerTeamContainer' style={{borderLeft:`2px solid ${value.teamColor}`,borderRight:`2px solid ${value.teamColor}`}} onClick= {() => {navigate(`/driversNames/${value.id}`)}}>
+              <p>{value.teamName}</p>
+             
+              <img className='TeamlogoStyling' src={value.teamLogo}></img>
+
+              </div>
               
-              {console.log(value)}
-                
-
-                </div>
-                
-              </div>
-              <div className='teamDrivers'>
-              <div className='teamInner'>
-                <p>{value.Name}</p>
-                <p>team Points</p>
-
-                </div>
-              </div>
-
-              <div className='carImg'>
-              car img
-
-              </div>
 
             </div>
-          </div>
+          
+
+          
          
         )
       })}

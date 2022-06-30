@@ -17,6 +17,7 @@ function CircuitComponent() {
     
   return (
     <div className='circuitsContainer'>
+        <h2 className='titleHeading' style={{color:"white"}}>2022 Circuits</h2>
        {circuitsList.map( (value, key) => {
 
 
@@ -24,6 +25,7 @@ function CircuitComponent() {
         return(
            <div key={key} className='circuitContainer'>
                 <div className='circuitContainerInner'>
+                
                     <div className='circuitInfoContainer'>
                         <div className='imageContainerCircuits'>
 

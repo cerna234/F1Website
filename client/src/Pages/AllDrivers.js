@@ -19,7 +19,7 @@ function AllDrivers() {
   },[])
   return (
     <div className='allDriversPage'>
-      <h2>2022 All Drivers</h2>
+      <h2 className='titleHeading'>2022 All Drivers</h2>
       <DriversComponent url="http://localhost:3002/Drivers/allDrivers"/>
     </div>
   )

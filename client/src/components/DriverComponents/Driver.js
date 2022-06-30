@@ -8,12 +8,17 @@ function Driver() {
     let {id} = useParams();
 
     const [driverInfo, setDriverInfo] = useState({});
+    const [teamInfo, setTeamInfo] = useState({});
    
   
 
     useEffect( () => {
         axios.get(`http://localhost:3002/Drivers/driverById/${id}`).then( (response) => {
           setDriverInfo(response.data);
+
+          
+
+          
          
            
         }, []).catch(error => {
@@ -39,11 +44,7 @@ function Driver() {
       <p>{driverInfo.Name}</p>
     </div>
     <div className='driverPageInfo'>
-      <div className='driverPageInfoContainer'>
-      <h2>Team: </h2>
-      <p>{driverInfo.teamName}</p>
 
-      </div>
 
       <div className='driverPageInfoContainer'>
         <h2>Number: </h2>
@@ -56,7 +57,7 @@ function Driver() {
 
       <div className='driverPageInfoContainer'>
       <h2>Podiums: </h2>
-      <p>{driverInfo.BirthPlace}</p>
+      <p>{driverInfo.podiums}</p>
 
 
       </div>

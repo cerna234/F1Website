@@ -6,6 +6,23 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
             allowNull: false,
         },
+        teamColor:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        teamLogo:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+
+        teamCountry:{
+            type:DataTypes.STRING,
+            allowNull:false
+        },
+        founded:{
+            type:DataTypes.STRING,
+            allowNull:false
+        }
         
         
     
