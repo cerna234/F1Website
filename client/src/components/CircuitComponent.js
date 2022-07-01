@@ -40,10 +40,10 @@ function CircuitComponent() {
                         </div>
                         <div className='circuitInfo'>
                             <div className='circuitInfoInner'>
-                                <p>{value.CircuitIMG}</p>
-                                <p>fv</p>
+                            
+                                <p>{value.CircuitName}</p>
                             </div>
-                            <p>date</p>
+                            <p>{value.cu}</p>
 
 
                         </div>

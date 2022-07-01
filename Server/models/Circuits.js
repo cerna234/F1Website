@@ -13,7 +13,12 @@ module.exports = (sequelize, DataTypes) => {
         CircuitIMG:{
             type: DataTypes.STRING,
             allowNull: false,
+        },
+        CircuitDate:{
+            type: DataTypes.STRING,
+            allowNull: false,
         }
+
        
         
     

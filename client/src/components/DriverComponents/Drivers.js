@@ -71,7 +71,7 @@ function Drivers() {
 
              <div className='DriverInfoInner'>
              <h2>{value.Name}</h2>
-              <p>{value.Team}</p>
+              
           
 
              </div>
