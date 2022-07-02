@@ -26,10 +26,12 @@ function Team() {
     
 
   return (
-    <div className='teamStyle'  style={{width:"100%",height:"70vh",paddingTop:"20vh"}}>
+    <div className='teamStyle' >
+ 
 
   
 <div className='section'>
+  
        {TeamInfo.map( (value,key) => {
           return (
             <div>

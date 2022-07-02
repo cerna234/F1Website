@@ -457,7 +457,7 @@ html{
 
 .driverPageImage{
     height: 40%;
-    width: 60%;
+    width: 40%;
     background-color: rgb(149, 42, 6);
 
 }
@@ -466,7 +466,7 @@ html{
 .driverPageImageContainer{
     width: 50%;
     height: 80%;
-    padding-top: 20px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -502,6 +502,11 @@ box-shadow: 10px 7px 10px rgba(17, 1, 1, 0.268);
    
     
     
+}
+
+.driverPageInfoContainer h2{
+    font-size: 25px;
+ 
 }
 .driverPageInfoContainer p{
   text-align: left;
@@ -701,6 +706,9 @@ color: rgb(55, 55, 55);
 .teamStyle{
     display: flex;
     align-items: center;
+    flex-direction: row;
+    height: 70vh;
+    padding-top: 20vh;
     
 
 }
@@ -713,6 +721,9 @@ color: rgb(55, 55, 55);
     justify-content: space-around;
     align-items: center;
     text-align: center;
+   width:"100%";
+   height:"70vh";
+   padding-top:"20vh";
 }
 
 .teamLogo{
@@ -833,10 +844,11 @@ color: rgb(55, 55, 55);
     }
 
     .driverPageImage{
-        height: 40%;
-        width: 60%;
-        background-color: rgb(149, 42, 6);
-        box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.36);
+        height: 200px;
+        width: 200px;
+        padding-top: 20px;
+    
+    
     }
 
     .circuitContainerInner{
@@ -861,8 +873,32 @@ color: rgb(55, 55, 55);
     .DriverImg{
         width: 70%;
       
-      
+
         left: 15%;
+    }
+
+    
+
+    .driverPageInfoContainer h2{
+        font-size: 20px;
+    }
+
+    .driverPageInfoContainer p{
+        font-size: 14px;
+    }
+
+    .section{
+        width: 100%;
+        height: 50%;
+        
+    }
+
+    .teamStyle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 120vh;
+
     }
   }
 
@@ -885,6 +921,10 @@ color: rgb(55, 55, 55);
     }
 
    
+    
+
+    
+    
 
     
     
