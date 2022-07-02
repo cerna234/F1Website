@@ -47,7 +47,11 @@ router.get("/driverById/:id", async(req,res) => {
 
 router.get("/allDrivers", async(req,res) => {
 
-    const allDrivers = await Drivers.findAll();
+    const allDrivers = await Drivers.findAll({
+        order:[
+            ['Points','DESC']
+    ],
+    });
     res.json(allDrivers);
 })
 
