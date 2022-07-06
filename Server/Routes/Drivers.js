@@ -3,8 +3,8 @@ const router = express.Router(); // uses built in express Router
 const { Op } = require("sequelize");
 const { Drivers,Team, sequelize } = require("../models")
 
-
-//RouteFor Top Drivers
+try{
+    //RouteFor Top Drivers
 router.get( "/TopDrivers" , async (req,res) => {
     const AllDrivers = await Drivers.findAll({
         order:[
@@ -56,6 +56,7 @@ router.get("/allDrivers", async(req,res) => {
 })
 
 
+
 router.get("/teamById/:id", async(req,res) => {
     const teamId = req.params.id;
     const driverTest = await sequelize.query(
@@ -70,11 +71,11 @@ router.get("/teamById/:id", async(req,res) => {
 })
 
 router.get("/teams", async(req,res) => {
-    const teams = await sequelize.query(
-        "SELECT * FROM `f1`.Teams",
-        {type: sequelize.QueryTypes.SELECT}
+    
 
-    );
+    const teams = await Drivers.findAll({
+
+    });
 
     res.json(teams);
 })
@@ -91,6 +92,13 @@ router.get("/driversNames/:id", async(req,res) => {
 
     res.json(driverNames);
 })
+
+}
+
+catch{
+console.log("SERVER ERROR")
+}
+
 
 
 

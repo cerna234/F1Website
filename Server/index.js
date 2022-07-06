@@ -1,8 +1,10 @@
 const express = require("express");
+
 const app = express();
 const cors = require('cors');
 app.use(express.json());
 app.use(cors());
+require("dotenv").config
 
 const db = require("./models")
 
@@ -20,9 +22,13 @@ app.use("/Circuits", CircuitsRoutes);
 
 
 
+
+
+
+
 db.sequelize.sync().then( () => {
-    app.listen(3002, () => {
-        console.log("servers up");
+    app.listen(process.env.PORT || 3060, () => {
+        console.log(`servers up `);
     });
     
 });

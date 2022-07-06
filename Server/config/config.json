@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "password",
-    "database": "f1",
-    "host": "localhost",
+    "username": "Cerna234",
+    "password": "Mc91089787",
+    "database": "f1DB",
+    "host": "f1websitedb.cu0njaiqcqjg.us-west-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +14,12 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "bbd6eeb3d2b309",
+    "password": "c99427cd",
+    "database": "heroku_d418836e96baa66",
+    "host": "us-cdbr-east-06.cleardb.net",
     "dialect": "mysql"
   }
 }
+
+
