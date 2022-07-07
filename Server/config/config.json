@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "Cerna234",
-    "password": "Mc91089787",
-    "database": "f1DB",
-    "host": "f1websitedb.cu0njaiqcqjg.us-west-1.rds.amazonaws.com",
+    "username": "root",
+    "password": "password",
+    "database": "f1",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
