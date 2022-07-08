@@ -66,7 +66,7 @@ router.get("/teams", async(req,res) => {
     })
     
     res.json(team)
-    
+     
 })
 
 router.get("/teams/:id", async(req,res) => {
@@ -76,11 +76,11 @@ router.get("/teams/:id", async(req,res) => {
     const teams = await Team.findAll({
 
   
-        include: [{
+        include: [{ 
             model: Drivers,
             where: {TeamId: teamId}
            }],
-           attributes: ['teamname','teamLogo']
+           
         
         })
         

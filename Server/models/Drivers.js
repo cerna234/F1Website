@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
         Name:{
             type: DataTypes.STRING,
             allowNull: false,
-        },
+        }, 
     
         podiums:{
             type: DataTypes.INTEGER,
