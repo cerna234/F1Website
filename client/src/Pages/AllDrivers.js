@@ -18,9 +18,11 @@ function AllDrivers() {
 
   },[])
   return (
-    <div className='allDriversPage'>
-      <h2 className='titleHeading'>2022 All Drivers</h2>
+    <div className='teamPage' style={{flexDirection:"column"}}>
+      
+      <h2 className='titleHeading' style={{paddingTop:"20vh"}}>2022 Formula1 Teams <br/> <p className='pageDescription'>View this season's official Formula 1 Drivers. View the Breakdown of this seasons Drivers.</p></h2>
       <DriversComponent url="https://formula-one-web-app.herokuapp.com/Drivers/allDrivers"/>
+    
     </div>
   )
 }

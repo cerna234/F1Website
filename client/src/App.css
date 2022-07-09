@@ -113,10 +113,11 @@ html{
 /* Drivers section for home page  */
 .DriversHeadingContainer{
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(34, 34, 34, 0.935);
 }
 .Driver{
     width: 280px;
@@ -127,12 +128,13 @@ html{
 }
 
 .titleHeading{
-    color: rgb(47, 47, 47);
+    color: rgb(33, 33, 33);
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     text-shadow: 2px 2px 5px rgba(37, 37, 37, 0.329);
     font-family: 'Orbitron', sans-serif;
     font-weight: 700;
+    padding-top: 4vh;
     position: relative;
 
 }
@@ -146,10 +148,15 @@ html{
 
 .Drivers{
     width: 100%;
-    height: 60vh;
+    height: 35vh;
+    background-color: rgba(34, 34, 34, 0.935);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 7px solid rgb(174, 174, 174);
+
+
+  
     
     
 }
@@ -166,6 +173,7 @@ html{
     width: 100%;
     height: 12vh;
     border-radius: 0px 0px 10px 10px;
+   
     
 }
 
@@ -178,12 +186,21 @@ html{
 
 .allDriversButtonContainer{
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     display: flex;
-    align-items: center;
+    align-items:baseline;
     justify-content: center;
+    padding-bottom: 5vh;
     
 
+}
+
+.pageDescription{
+    font-size:12px;
+    color:rgba(33, 33, 33, 0.618);
+    font-family:Arial, Helvetica, sans-serif;
+    text-shadow:none;
+    padding-top:20px;
 }
 
 .AllDriversButton{
@@ -199,6 +216,9 @@ html{
 .DriverInfoInner{
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
@@ -254,6 +274,7 @@ html{
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.137);
     border-radius: 5px;
     height: 5vh;
+    width: 70%;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.068);
@@ -857,8 +878,10 @@ color: rgb(55, 55, 55);
     .driverPageInfo{
         width: 100%;
         height: 100%;
+     
     }
 
+   
     .driverPageImage{
         height: 200px;
         width: 200px;
@@ -927,6 +950,8 @@ color: rgb(55, 55, 55);
         opacity: 20%;
     
     }
+
+    
   }
 
 @media only screen and (max-width: 1200px) {
@@ -1024,6 +1049,17 @@ color: rgb(55, 55, 55);
     height: 220vh;
 
 }
+
+.DriverInfo{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    height: 37vh;
+
     
+}
+    
+.allDriversButtonContainer{
+   height: 20vh;
+}
    
   }
