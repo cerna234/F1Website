@@ -1,25 +1,21 @@
-## Project Name & Pitch
+FULL STACK FORMULA ONE WEBSITE
 
-#### Example:
+A WebApp that lets you view Formula one current standings,Player Points,Team Points, etc. Built Using React, Node.js, Express.js, Mysql.
 
-TweetWorld 
+Users can view Top Drivers Based on points in the current standings, Users can click on drivers or teams and view further infomation about those drivers and teams.
 
-An application used to filter data form Twitter based on user preference, built with React, Redux, JavaScript, and CSS.
 
-## Project Status
-(only necessary if incomplete)
-
-#### Example:
-
-This project is currently in development. Users can filter tweets by username and keyword and see visual data representation. Functionality to sort by additional parameters is in progress.
 
 ## Project Screen Shot(s)
 
 #### Example:   
 
-[ PRETEND SCREEN SHOT IS HERE ]
+<img width="1440" alt="Screen Shot 2022-07-20 at 9 18 33 AM" src="https://user-images.githubusercontent.com/51102686/180032718-d56ffdf9-19d2-4380-a377-8c765134f455.png">
 
-[ PRETEND OTHER SCREEN SHOT IS HERE ]
+
+<img width="1440" alt="Screen Shot 2022-07-20 at 9 18 55 AM" src="https://user-images.githubusercontent.com/51102686/180032818-19a833dd-6f2d-4eed-b83e-5dc762d79b7e.png">
+
+<img width="1435" alt="Screen Shot 2022-07-20 at 9 19 41 AM" src="https://user-images.githubusercontent.com/51102686/180032955-0edb5df3-818d-4137-9fe8-33430149c24b.png">
 
 ## Installation and Setup Instructions
 
