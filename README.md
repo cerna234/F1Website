@@ -1,4 +1,4 @@
-FULL STACK FORMULA ONE WEBSITE
+## FULL STACK FORMULA ONE WEBSITE
 
 A WebApp that lets you view Formula one current standings,Player Points,Team Points, etc. Built Using React, Node.js, Express.js, Mysql.
 
